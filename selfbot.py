@@ -16,7 +16,8 @@ with open('cctv.json', 'r') as fp:
 with open('setting.json', 'r') as fp:
     manage = json.load(fp)
 #================================================================================#
-
+# J I K A   A N D A  M E N E M U K A N   K A T A - K A T A  C A B U L 
+#             P L E A S E  J A N G A N  B A P E R :V
 #================================================================================#
 client.log("User Token: {}\n────────────────────────────────────────────────────────────────".format(str(client.authToken)))
 clientMid = client.profile.mid
@@ -1706,10 +1707,10 @@ while True:
                    clientPoll.setRevision(op.revision)
     except Exception as error:
         client.log("[GOP ERROR]\n{}".format(str(error)))
-#===============[ NOTE ]======================]
+#====================================[ NOTE ]=============================================]
 # LINE PYTHON3: LINEPY
 # AUTHOR : FADHIIL RACHMAN
 # SB COMMAND CREATED BY : ANG
 # DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
 # JANGAN MELAKUKAN PERUBAHAN PADA SCRIPT KECUALI ANDA YAKIN DAN TAU MENGENAI ITU
-# PUBLISHED ON: https://www.jurustupai.com/2020/05/cara-membuat-simple-selfbot-template.html
+# PUBLISHED ON: https://www.jurustupai.com/2020/08/cara-menggunakan-mini-selfbot-line.html
