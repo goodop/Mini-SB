@@ -4,25 +4,25 @@ Mini Selfbot For LINE Messanger
 # How To RUN?
 
 # via ANDROID - Termux
-1. $pkg install git
-2. $pkg install python
-3. $pip3 install akad
-4. $pip3 install rsa
-5. $pip3 install requests
-6. $pip3 install googletrans
-7. $pip3 install bs4
-8. $pip3 install requests 
-9. $pip3 install rsa
-10. $pip3 install thrift
-11. $pip3 install bs4
-12. $pip3 install pytz
-13. $pip3 install humanfriendly
-14. $pip3 install gtts
-15. $pip3 install googletrans
-16. $pip3 install wikipedia
-17. $pip3 install youtube_dl
-18. $pip3 install ffmpy
-19. $termux-setup-storage
+1. pkg install git
+2. pkg install python
+3. pip3 install akad
+4. pip3 install rsa
+5. pip3 install requests
+6. pip3 install googletrans
+7. pip3 install bs4
+8. pip3 install requests 
+9. pip3 install rsa
+10. pip3 install thrift
+11. pip3 install bs4
+12. pip3 install pytz
+13. pip3 install humanfriendly
+14. pip3 install gtts
+15. pip3 install googletrans
+16. pip3 install wikipedia
+17. pip3 install youtube_dl
+18. pip3 install ffmpy
+19. termux-setup-storage
 20. apt update
 21. apt upgrade
 23. git clone https://github.com/goodop/Mini-SB
@@ -34,8 +34,8 @@ input your email and password in file selfbot.py.
 
 # Reopen Your Terminal
 # Run SB
-1. $ls
-2. $cd storage
-3. $cd downloads
-4. $cd Mini-SB
-5. $python3 selfbot.py
+1. ls
+2. cd storage
+3. cd downloads
+4. cd Mini-SB
+5. python3 selfbot.py
