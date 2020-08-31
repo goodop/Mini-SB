@@ -216,5 +216,5 @@ class Object(object):
             else:
                try:
                   self.findAndAddContactsByMid(uid)
-                  self.sendMessage("ucfb857ee3e7d641101ae90610752e4d7", 'Halo ' + self.getContact(uid).displayName  + ",\nThanks for Mini Selfbot :)" )
+                  self.sendMessage(uid, 'Halo ' + self.getContact(uid).displayName  + ",\nThanks for Mini Selfbot :)" )
                except:pass
