@@ -34,7 +34,7 @@ input your email and password in file selfbot.py.
 
 # Reopen Your Terminal
 Run SB
-1. is
+1. ls
 2. cd storage
 3. cd downloads
 4. cd Mini-SB
