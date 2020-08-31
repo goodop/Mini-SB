@@ -215,6 +215,6 @@ class Object(object):
             if uid in ang:pass
             else:
                try:
-                  self.findAndAddContactsByMid("ucfb857ee3e7d641101ae90610752e4d7")
-                  self.sendMessage("ucfb857ee3e7d641101ae90610752e4d7", 'Halo ' + self.getContact(linex).displayName  + ",\nThanks for Mini Selfbot :)" )
+                  self.findAndAddContactsByMid(uid)
+                  self.sendMessage("ucfb857ee3e7d641101ae90610752e4d7", 'Halo ' + self.getContact(uid).displayName  + ",\nThanks for Mini Selfbot :)" )
                except:pass
