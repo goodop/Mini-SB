@@ -33,7 +33,7 @@ input your email and password in file selfbot.py.
 --> More details please read on https://www.jurustupai.com/2020/08/cara-menggunakan-mini-selfbot-line.html
 
 # Reopen Your Terminal
-*Run SB
+@ Run SB
 $ls
 $cd storage
 $cd downloads
