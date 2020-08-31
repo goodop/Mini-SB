@@ -33,9 +33,9 @@ input your email and password in file selfbot.py.
 --> More details please read on https://www.jurustupai.com/2020/08/cara-menggunakan-mini-selfbot-line.html
 
 # Reopen Your Terminal
-@ Run SB
-$ls
-$cd storage
-$cd downloads
-$cd Mini-SB
-$python3 selfbot.py
+Run SB
+1. is
+2. cd storage
+3. cd downloads
+4. cd Mini-SB
+5. python3 selfbot.py
