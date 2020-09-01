@@ -1123,14 +1123,15 @@ def clientBot(op):
                                 key = eval(msg.contentMetadata["MENTION"])
                                 key["MENTIONEES"][0]["M"]
                                 for x in key["MENTIONEES"]:
+                                  if x["M"] in manage["blacklist"]:client.sendMessage(msg.to,"[ Failed! ]\n{} in blacklist.".format(client.getContact(x["M"]).displayName))
+                                  else:
                                    targets.append(x["M"])
                                 for target in targets:
-                                  if target in manage["blacklist"]:
-                                     client.sendMessage(msg.to,"[ Failed ]\n" + client.getContact(target).displayName + " in blacklist.")
-                                  else:
-                                     client.findAndAddContactsByMid(target)
-                                     client.inviteIntoGroup(msg.to, [target])
-                                     client.sendMessage(msg.to, client.getContact(target).displayName + " has been invited.")
+                                  try:
+                                    client.findAndAddContactsByMid(target)
+                                    client.inviteIntoGroup(msg.to, [target])
+                                    client.sendMessage(msg.to, client.getContact(target).displayName + " has been invited.")
+                                  except:pass                                   
                              else:pass                        
                         if ang.lower() == manage["nukekey"]:
                            if manage["nukekey"] !="":
