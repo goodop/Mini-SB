@@ -377,11 +377,11 @@ def clientBot(op):
 
         if op.type == 5:
            if manage["adders"] == True:
-               if op.param2 not in manage["blacklist"]:
-                   if manage["addmsg"] == "":sendMention(op.param2,"Hi @! \nThank u for add me :)",[op.param2])
+               if op.param1 not in manage["blacklist"]:
+                   if manage["addmsg"] == "":sendMention(op.param1,"Hi @! \nThank u for add me :)",[op.param1])
                    else:
                       text = "Hi @! \n" + manage["addmsg"]
-                      sendMention(op.param2,text,[op.param2])
+                      sendMention(op.param1,text,[op.param1])
 
         if op.type == 19:
            if op.param1 in protectMax:
@@ -1125,9 +1125,12 @@ def clientBot(op):
                                 for x in key["MENTIONEES"]:
                                    targets.append(x["M"])
                                 for target in targets:
-                                   client.findAndAddContactsByMid(target)
-                                   client.inviteIntoGroup(msg.to, [target])
-                                   client.sendMessage(msg.to, client.getContact(target).displayName + " has been invited.")
+                                  if target in manage["blacklist"]:
+                                     client.sendMessage(msg.to,"[ Failed ]\n" + client.getContact(target).displayName + " in blacklist.")
+                                  else:
+                                     client.findAndAddContactsByMid(target)
+                                     client.inviteIntoGroup(msg.to, [target])
+                                     client.sendMessage(msg.to, client.getContact(target).displayName + " has been invited.")
                              else:pass                        
                         if ang.lower() == manage["nukekey"]:
                            if manage["nukekey"] !="":
