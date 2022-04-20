@@ -9,7 +9,7 @@ from Liff.ttypes import LiffChatContext, LiffContext, LiffSquareChatContext, Lif
 import time, random, sys, json, codecs, threading, glob, re, string, os, requests, six, ast, pytz, urllib, urllib3, urllib.parse, traceback, atexit, wikipedia, subprocess, errno, asyncio
 with open('token.json', 'r') as fp:
     connecting = json.load(fp)
-if connecting['token'] == "":client = LINE("emailmu@mail.com","passwordmu")
+if connecting['token'] == "":client = LINE("abdulmannanshahzad6@gmail.com@gmail.com","experiaxz3")
 else:client=LINE(idOrAuthToken=connecting['token'])
 with open('cctv.json', 'r') as fp:
     cctv = json.load(fp)
